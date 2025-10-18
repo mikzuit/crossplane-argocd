@@ -6,13 +6,13 @@ metadata:
   name: crossplane-apis
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: apis
+    crossplane.mikzuit.io: apis
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: upbound/provider-aws/apis
   destination:

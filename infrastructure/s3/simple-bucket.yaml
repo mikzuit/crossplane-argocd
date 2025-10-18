@@ -4,6 +4,6 @@ metadata:
   name: crossplane-argocd-simple-bucket
 spec:
   forProvider:
-    region: eu-central-1
+    region: eu-west-3
   providerConfigRef:
     name: default

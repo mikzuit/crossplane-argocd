@@ -1,18 +1,18 @@
 # crossplane-argocd
-[![Crossplane plain ArgoCD](https://github.com/jonashackt/crossplane-argocd/workflows/crossplane-argocd/badge.svg)](https://github.com/jonashackt/crossplane-argocd/actions/workflows/crossplane-argocd.yml)
-[![Crossplane, ArgoCD & External Secrets Operator (+Doppler)](https://github.com/jonashackt/crossplane-argocd/workflows/crossplane-argocd-external-secrets/badge.svg)](https://github.com/jonashackt/crossplane-argocd/actions/workflows/crossplane-argocd-external-secrets.yml)
-![crossplane-version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fcrossplane%2FChart.yaml&query=%24.dependencies%5B%3A1%5D.version&label=crossplane&color=blue)
-![argocd-version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fargocd%2Finstall%2Fkustomization.yaml&query=%24.resources%5B%3A1%5D&label=argocd&color=rgb(236%2C%20110%2C%2076))
-![provider-aws-ec2](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-ec2.yaml&query=%24.spec.package&label=provider-aws-ec2&color=rgb(109%2C%20100%2C%20245))
-![provider-aws-eks](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-eks.yaml&query=%24.spec.package&label=provider-aws-eks&color=rgb(109%2C%20100%2C%20245))
-![provider-aws-iam](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-iam.yaml&query=%24.spec.package&label=provider-aws-iam&color=rgb(109%2C%20100%2C%20245))
-![provider-aws-s3](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjonashackt%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-s3.yaml&query=%24.spec.package&label=provider-aws-s3&color=rgb(109%2C%20100%2C%20245))
-[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/jonashackt/crossplane-argocd/blob/master/LICENSE)
+[![Crossplane plain ArgoCD](https://github.com/mikzuit/crossplane-argocd/workflows/crossplane-argocd/badge.svg)](https://github.com/mikzuit/crossplane-argocd/actions/workflows/crossplane-argocd.yml)
+[![Crossplane, ArgoCD & External Secrets Operator (+Doppler)](https://github.com/mikzuit/crossplane-argocd/workflows/crossplane-argocd-external-secrets/badge.svg)](https://github.com/mikzuit/crossplane-argocd/actions/workflows/crossplane-argocd-external-secrets.yml)
+![crossplane-version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fcrossplane%2FChart.yaml&query=%24.dependencies%5B%3A1%5D.version&label=crossplane&color=blue)
+![argocd-version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fargocd%2Finstall%2Fkustomization.yaml&query=%24.resources%5B%3A1%5D&label=argocd&color=rgb(236%2C%20110%2C%2076))
+![provider-aws-ec2](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-ec2.yaml&query=%24.spec.package&label=provider-aws-ec2&color=rgb(109%2C%20100%2C%20245))
+![provider-aws-eks](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-eks.yaml&query=%24.spec.package&label=provider-aws-eks&color=rgb(109%2C%20100%2C%20245))
+![provider-aws-iam](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-iam.yaml&query=%24.spec.package&label=provider-aws-iam&color=rgb(109%2C%20100%2C%20245))
+![provider-aws-s3](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmikzuit%2Fcrossplane-argocd%2Fmain%2Fupbound%2Fprovider-aws%2Fprovider%2Fupbound-provider-aws-s3.yaml&query=%24.spec.package&label=provider-aws-s3&color=rgb(109%2C%20100%2C%20245))
+[![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/mikzuit/crossplane-argocd/blob/master/LICENSE)
 [![renovateenabled](https://img.shields.io/badge/renovate-enabled-yellow)](https://renovatebot.com)
 
 Example project showing how to use the crossplane together with ArgoCD
 
-> This project is based on the crossplane only repository https://github.com/jonashackt/crossplane-aws-azure, where the basics about crossplane.io are explained in detail - incl. how to provision to AWS and Azure.
+> This project is based on the crossplane only repository https://github.com/mikzuit/crossplane-aws-azure, where the basics about crossplane.io are explained in detail - incl. how to provision to AWS and Azure.
 
 __The idea is "simple": Why not treat infrastructure deployments/provisioning the same way as application deployments?!__ An ideal combination would be crossplane as control plane framework, which manages infrastructure through the Kubernetes api together with ArgoCD as [GitOps](https://www.gitops.tech/) framework to have everything in sync with our version control system.
 
@@ -60,7 +60,7 @@ kubectl apply -f argocd/crossplane-apis/crossplane-apis.yaml
 
 # Create actual EKS cluster via Crossplane & register it in ArgoCD via argocd-provider
 kubectl apply -f argocd/infrastructure/aws-eks.yaml
-crossplane beta trace kubernetesclusters.k8s.crossplane.jonashackt.io/deploy-target-eks -o wide
+crossplane beta trace kubernetesclusters.k8s.crossplane.mikzuit.io/deploy-target-eks -o wide
 
 # Optional: If you want, have a look onto the new cluster
 kubectl get secret eks-cluster-kubeconfig -o jsonpath='{.data.kubeconfig}' | base64 --decode > ekskubeconfig
@@ -78,7 +78,7 @@ Now you should see both clusters (kind & EKS) running and the app beeing deploye
 
 # Prerequisites: a management cluster for ArgoCD and crossplane
 
-First we need a simple management cluster for our ArgoCD and crossplane deployments. [As in the base project](https://github.com/jonashackt/crossplane-aws-azure) we simply use kind here:
+First we need a simple management cluster for our ArgoCD and crossplane deployments. [As in the base project](https://github.com/mikzuit/crossplane-aws-azure) we simply use kind here:
 
 Be sure to have some packages installed. On a Mac:
 
@@ -282,7 +282,7 @@ Remember to change the initial password in production environments!
 
 Is it possible to already use the GitOps approach right from here on to install crossplane? Let's try it.
 
-As already used from https://github.com/jonashackt/crossplane-aws-azure and explained in https://stackoverflow.com/a/71765472/4964553 we have a simple Helm chart, which is able to be managed by RenovateBot - and thus kept up-to-date. Our Chart lives in [`crossplane/Chart.yaml`](crossplane/Chart.yaml):
+As already used from https://github.com/mikzuit/crossplane-aws-azure and explained in https://stackoverflow.com/a/71765472/4964553 we have a simple Helm chart, which is able to be managed by RenovateBot - and thus kept up-to-date. Our Chart lives in [`crossplane/Chart.yaml`](crossplane/Chart.yaml):
 
 ```yaml
 apiVersion: v2
@@ -340,7 +340,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: crossplane
   destination:
@@ -443,7 +443,7 @@ spec:
   project: default
   source:
     path: upbound/provider-aws/config
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
   destination:
     namespace: default
@@ -523,7 +523,7 @@ spec:
   project: default
   source:
     path: upbound/provider-aws/config
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
   destination:
     namespace: default
@@ -616,7 +616,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: argocd/crossplane-bootstrap
   destination:
@@ -635,7 +635,7 @@ spec:
         maxDuration: 1m
 ```
 
-This `Application` will look for manifests at `argocd/crossplane-bootstrap` in our repository https://github.com/jonashackt/crossplane-argocd. And there all our Crossplane components are already defined as ArgoCD `Application` manifests. 
+This `Application` will look for manifests at `argocd/crossplane-bootstrap` in our repository https://github.com/mikzuit/crossplane-argocd. And there all our Crossplane components are already defined as ArgoCD `Application` manifests. 
 
 Also don't forget to define the finalizers `finalizers: - resources-finalizer.argocd.argoproj.io`. Otherwise the Applications managed by this App of Apps won't be deleted and will still be running, if you delete just the App of Apps!
 
@@ -800,7 +800,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: infrastructure
   destination:
@@ -996,7 +996,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: external-secrets/install
   destination:
@@ -1121,7 +1121,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: external-secrets
   destination:
@@ -1340,7 +1340,7 @@ spec:
 ```
 
 
-Also let's sync the Nuxt.js project https://github.com/jonashackt/microservice-ui-nuxt-js via the used `aws s3 sync`:
+Also let's sync the Nuxt.js project https://github.com/mikzuit/microservice-ui-nuxt-js via the used `aws s3 sync`:
 
 ```shell
 aws s3 sync .output/public/ s3://crossplane-argocd-s3-bucket --acl public-read
@@ -1373,7 +1373,7 @@ https://thenewstack.io/gitops-as-an-evolution-of-kubernetes/
 
 ### Multiple AWS Providers as ArgoCD Application
 
-To be able to deploy a [nested Composition like this for EKS](https://github.com/jonashackt/crossplane-eks-cluster) we need to install multiple Crossplane Providers: `provider-aws-ec2`, `provider-aws-eks`, `provider-aws-iam` additionally to our already installed `provider-aws-s3`. Therefore we should enhance our concept on how to install a Provider with ArgoCD!
+To be able to deploy a [nested Composition like this for EKS](https://github.com/mikzuit/crossplane-eks-cluster) we need to install multiple Crossplane Providers: `provider-aws-ec2`, `provider-aws-eks`, `provider-aws-iam` additionally to our already installed `provider-aws-s3`. Therefore we should enhance our concept on how to install a Provider with ArgoCD!
 
 Since every Upbound provider family has one ProviderConfig to access the credentials, but multiple providers, it would make sense to enhance the Argo Application `argocd/crossplane-bootstrap/crossplane-provider-aws.yaml` to support multiple providers:
 
@@ -1386,7 +1386,7 @@ metadata:
   name: crossplane-provider-aws
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: crossplane
+    crossplane.mikzuit.io: crossplane
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
@@ -1394,7 +1394,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
     path: upbound/provider-aws/provider
   destination:
@@ -1512,7 +1512,7 @@ And luckily without any errors like mentioned above!
 
 ### Using the EKS Nested Composition as Configuration Package
 
-I offloaded all the EKS Nested Composition as a separate repository, which publishes a Crossplane Configuration Package as OCI image: https://github.com/jonashackt/crossplane-eks-cluster
+I offloaded all the EKS Nested Composition as a separate repository, which publishes a Crossplane Configuration Package as OCI image: https://github.com/mikzuit/crossplane-eks-cluster
 
 We should be able to use it via the following Configuration:
 
@@ -1522,7 +1522,7 @@ kind: Configuration
 metadata:
   name: crossplane-eks-cluster
 spec:
-  package: ghcr.io/jonashackt/crossplane-eks-cluster:v0.0.2
+  package: ghcr.io/mikzuit/crossplane-eks-cluster:v0.0.2
 ```
 
 Let's try to apply it to our cluster and use it:
@@ -1552,7 +1552,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: app-deployment
     path: upbound/provider-aws/apis
   destination:
@@ -1587,7 +1587,7 @@ Now we use our installed APIs to create a Claim in [`infrastructure/eks/deploy-t
 
 ```yaml
 # Use the spec.group/spec.versions[0].name defined in the XRD
-apiVersion: k8s.crossplane.jonashackt.io/v1alpha1
+apiVersion: k8s.crossplane.mikzuit.io/v1alpha1
 # Use the spec.claimName or spec.name specified in the XRD
 kind: KubernetesCluster
 metadata:
@@ -1627,7 +1627,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: app-deployment
     path: infrastructure/eks
   destination:
@@ -1644,7 +1644,7 @@ spec:
         maxDuration: 1m
 ```
 
-Now **this** will deploy our EKS cluster using ArgoCD and our EKS Configuration Package based Nested EKS Composition https://github.com/jonashackt/crossplane-eks-cluster:
+Now **this** will deploy our EKS cluster using ArgoCD and our EKS Configuration Package based Nested EKS Composition https://github.com/mikzuit/crossplane-eks-cluster:
 
 ```shell
 kubectl apply -f argocd/infrastructure/aws-eks.yaml
@@ -1744,7 +1744,7 @@ metadata:
   name: crossplane-provider-contrib
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: crossplane
+    crossplane.mikzuit.io: crossplane
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
@@ -1752,7 +1752,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: app-deployment
     path: crossplane-contrib
   destination:
@@ -1957,7 +1957,7 @@ metadata:
   name: crossplane-provider-argocd-config
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: crossplane
+    crossplane.mikzuit.io: crossplane
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
@@ -1965,7 +1965,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: app-deployment
     path: crossplane-contrib/provider-argocd/config
   destination:
@@ -2050,9 +2050,9 @@ It won't be available until the EKS cluster is fully deployed, thus producing so
 
 Now we finally finally have the cluster dynamically referencable via the Crossplane ArgoCD Provider created Cluster object with the name `deploy-target-eks`! Let's try to use that in an Application deployment.
 
-In order to deploy our example app https://github.com/jonashackt/microservice-api-spring-boot
+In order to deploy our example app https://github.com/mikzuit/microservice-api-spring-boot
 
-we need the corresponding Kubernetes deployment manifests, provided by https://github.com/jonashackt/microservice-api-spring-boot-config
+we need the corresponding Kubernetes deployment manifests, provided by https://github.com/mikzuit/microservice-api-spring-boot-config
 
 Having both in place, we can craft a matching ArgoCD Application:
 
@@ -2063,13 +2063,13 @@ metadata:
   name: microservice-api-spring-boot
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: application
+    crossplane.mikzuit.io: application
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/microservice-api-spring-boot-config
+    repoURL: https://github.com/mikzuit/microservice-api-spring-boot-config
     targetRevision: HEAD
     path: deployment
   destination:
@@ -2116,13 +2116,13 @@ metadata:
   name: microservice-api-spring-boot
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: application
+    crossplane.mikzuit.io: application
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/microservice-api-spring-boot-config
+    repoURL: https://github.com/mikzuit/microservice-api-spring-boot-config
     targetRevision: HEAD
     path: deployment
   destination:
