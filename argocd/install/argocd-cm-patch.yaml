@@ -5,7 +5,7 @@ metadata:
 data:
   resource.customizations.ingoreDifferences: |
     "*.upbound.io/*":
-      jqPathExpresions:
+      jqPathExpressions:
         - .metadata.ownerReferences
   # Set Resource Tracking Method (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-tracking-method)
   application.resourceTrackingMethod: annotation
