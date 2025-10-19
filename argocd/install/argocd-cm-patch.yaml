@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  resource.customizations.ingoreDifferences: |
+  resource.customizations.ignoreDifferences: |
     "*.upbound.io/*":
       jqPathExpressions:
         - .metadata.ownerReferences
