@@ -3,6 +3,10 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
+  resource.customizations.ingoreDifferences: |
+    "*.upbound.io/*":
+      jqPathExpresions:
+        - .metadata.ownerReferences
   # Set Resource Tracking Method (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-tracking-method)
   application.resourceTrackingMethod: annotation
   # Set Resource Exclusion (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-exclusion)
