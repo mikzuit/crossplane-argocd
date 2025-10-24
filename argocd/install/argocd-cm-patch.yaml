@@ -3,13 +3,15 @@ kind: ConfigMap
 metadata:
   name: argocd-cm
 data:
-  resource.customizations.ignoreDifferences: |
-    "*.upbound.io/*":
-      jqPathExpressions:
-        - .metadata.ownerReferences
   # Set Resource Tracking Method (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-tracking-method)
   application.resourceTrackingMethod: annotation
-  # Set Resource Exclusion (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-exclusion)
+  # Set" Resource Exclusion (see https://docs.crossplane.io/knowledge-base/integrations/argo-cd-crossplane/#set-resource-exclusion)
+  resource.customizations.ignoreDifferences: "\"*.upbound.io/*\":\n jqPathExpressions: \n - .metadata.ownerReferences\n" 
+  # resource.customizations.ignoreDifferences: |
+  #   bucketnotifications.s3.aws.upbound.io:
+  #     jqPathExpressions:
+  #       - .metadata.ownerReferences
+
   resource.exclusions: |
     - apiGroups:
       - "*"
@@ -17,4 +19,4 @@ data:
       - ProviderConfigUsage
   # add an additional local user with apiKey capabilities for provider-argocd
   # see https://github.com/crossplane-contrib/provider-argocd?tab=readme-ov-file#getting-started-and-documentation
-  accounts.provider-argocd: apiKey      
+  accounts.provider-argocd: apiKey
