@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-unique-bucket-20251025-4387529475809720
+  name: aws-s3-2025102622121234
   namespace: argocd
   labels:
     crossplane.mikzuit.io: infrastructure
@@ -11,6 +11,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
+  forProvider:
+    region: eu-west-3
   source:
     repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD
