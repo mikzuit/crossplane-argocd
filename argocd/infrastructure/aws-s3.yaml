@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aws-s3
+  name: my-unique-bucket-20251025-4387529475809720
   namespace: argocd
   labels:
     crossplane.mikzuit.io: infrastructure
