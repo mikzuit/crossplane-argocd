@@ -11,8 +11,6 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
-  forProvider:
-    region: eu-west-3
   source:
     repoURL: https://github.com/mikzuit/crossplane-argocd
     targetRevision: HEAD

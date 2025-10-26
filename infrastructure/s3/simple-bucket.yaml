@@ -1,9 +1,9 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: crossplane-argocd-simple-bucket
+  name: aws-s3-2025102622121234
 spec:
   forProvider:
-    region: us-east-1
+    region: eu-west-3
   providerConfigRef:
     name: default
